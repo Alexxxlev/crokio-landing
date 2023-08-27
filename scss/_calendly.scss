@@ -1,0 +1,50 @@
+.calendly {
+  position: relative;
+  display: none;
+  -webkit-transform: translate(-120%, 120%);
+  -ms-transform: translate(-120%, 120%);
+  transform: translate(-120%, 120%);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.calendly--open {
+  display: block;
+  position: fixed;
+  -webkit-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modal {
+  display: block;
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.calendly-close {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  position: absolute;
+  top: 30px;
+  left: 92%;
+  transform: translateX(-92%);
+  z-index: 210;
+  background: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,125 @@
+// GLOBAL SETTINGS
+body,
+html {
+  font-family: 'Roboto Mono', monospace;
+  color: $black;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  transition: background-color all 1s ease;
+}
+
+body {
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1195px;
+  padding: 0 30px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+// BUTTONS
+.button {
+  margin: 0 auto;
+  padding: 14px 25px;
+  max-width: 380px;
+  width: 100%;
+  display: block;
+  background: #27282D;
+  border-radius: 18px;
+  color: $white;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: 'Roboto Mono';
+  text-align: center;
+  transition: all .3s;
+
+  &:hover {
+    -webkit-box-shadow: 6px 5px #E6FF28;
+    box-shadow: 6px 5px #E6FF28;
+    color: #E6FF28;
+  }
+}
+
+.btn {
+  padding: 9px 30px 10px 30px;
+  background: #fff;
+  border: 1px solid #27282D;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  font-family: 'Roboto Mono';
+  text-align: center;
+  height: 40px;
+  transition: all .3s;
+
+  &:hover {
+    box-shadow: 6px 5px #E6FF28;
+  }
+}
+
+// TEXT
+.heading {
+  &.heading--min {
+    .heading__title {
+      margin-bottom: 40px;
+      font-size: 48px;
+    }
+
+    .heading__text {
+      margin-bottom: 85px;
+    }
+  }
+
+  &__suptitle {
+    color: $black;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 128px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__title {
+    color: $black;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 115.885%;
+  }
+
+  &__text {
+    margin: 0 auto;
+    max-width: 640px;
+    font-size: 24px;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+
+  &__item-icon {
+    width: 32px;
+    height: 32px;
+  }
+}

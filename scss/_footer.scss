@@ -1,0 +1,25 @@
+// FOOTER
+.footer {
+  padding: 70px 0;
+  background-color: #27282D;
+  color: $white;
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 1040px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__social {
+    gap: 45px;
+
+    .social__item-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
